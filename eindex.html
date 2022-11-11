@@ -17,8 +17,20 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    <link rel="icon" href="img/logo.png" />
+    <link rel="icon" href="img/logo/logo.png" />
     <style>
+        #preloader{
+            background: #000 url(img/logo/load.gif) no-repeat center center;
+            background-size: 25%;
+            height: 100vh;
+            background-blend-mode: difference;
+            width: 100%;
+            position: fixed;
+            z-index: 200;
+        }
+
+
+
         table img,
         .event-mobile img,
         .swiper-slide img{
@@ -27,7 +39,7 @@
         }
 
         table img {
-            width: 300px;
+            width: 200px;
         }
 
         .event-mobile li {
@@ -55,6 +67,9 @@
 </head>
 
 <body class="demo-1">
+    <!-- preloader -->
+<div id="preloader"></div>
+    <!-- preloader -->
     <!--MAIN WRAPPER START-->
     <div class="main-wrapper clearfix">
         <!-- HEADER START
@@ -67,7 +82,7 @@
                             <!-- LOGO START
                                 ============================================= -->
                             <div class="logo">
-                                <a href="eindex.html"><img src="img/logo/logo.png" alt="Dugem Logo" /></a>
+                                <a href="eindex.html"><img src="img/logo/c_logo.png" alt="Magnus Logo" /></a>
                             </div>
                             <!-- LOGO END -->
                         </div>
@@ -157,7 +172,7 @@
                                 <!-- <a href="#" class="button-basic-1">Electro</a> -->
                                 <h2 data-aos="fade-up">Fashion Show</h2>
                                 <h5 data-aos="fade-up">/ 08 DECEMBER 2022</h5>
-                                <p class="dugem-text" data-aos="fade-up">event info.</p>
+                                <p class="Magnus-text" data-aos="fade-up">event info.</p>
                             </div>
                             <div class="global-buy" data-aos="fade-up">
                                 <a href="single-event.html" class="button-basic-1">View Detail</a>
@@ -199,7 +214,7 @@
                         <h2 class="head-title-1">
                             Main Competition <span class="title-end">.</span>
                         </h2>
-                        <p class="dugem-text">
+                        <p class="Magnus-text">
                             Departement of Computer Application Presents Magnus 2k22
                             Intercollage Fest.
                         </p>
@@ -526,12 +541,12 @@
                                     <div class="post-thumb">
                                         <a>
                                             <img src="img/events/16 dj room.png" alt="latest-news-img-1" />
-                                            <div class="dugem-overlay"></div>
+                                            <div class="Magnus-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
                                         <div class="post-category">
-                                            <a class="button-basic-1">Event News</a>
+                                            <a class="button-basic-1">DJ Room</a>
                                         </div>
                                         <div class="post-date">
                                             <a><span>August 30, 2021</span></a>
@@ -544,7 +559,7 @@
                                     <div class="post-thumb">
                                         <a>
                                             <img src="img/events/14 fashion show.png" alt="latest-news-img-2" />
-                                            <div class="dugem-overlay"></div>
+                                            <div class="Magnus-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
@@ -563,17 +578,12 @@
                                     <div class="post-thumb">
                                         <a>
                                             <img src="img/events/18 ai expo.png" alt="latest-news-img-3" />
-                                            <div class="dugem-overlay"></div>
+                                            <div class="Magnus-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
                                         <div class="post-category">
-                                            <a href="#" class="button-basic-1">Nightlife</a>
-                                        </div>
-                                        <div class="post-title">
-                                            <h3>
-                                                <a> info </a>
-                                            </h3>
+                                            <a href="#" class="button-basic-1">Ai Expo</a>
                                         </div>
                                         <div class="post-date">
                                             <a href="#"><span>April 30, 2021</span></a>
@@ -586,14 +596,13 @@
                                     <div class="post-thumb">
                                         <a>
                                             <img src="img/events/17 meta vers.png" alt="latest-news-img-4" />
-                                            <div class="dugem-overlay"></div>
+                                            <div class="Magnus-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
                                         <div class="post-category">
                                             <a href="#" class="button-basic-1">Meta Vers</a>
                                         </div>
-
                                         <div class="post-date">
                                             <a href="#"><span>April 30, 2021</span></a>
                                         </div>
@@ -605,7 +614,7 @@
                                     <div class="post-thumb">
                                         <a>
                                             <img src="img/events/14 fashion show.png" alt="latest-news-img-2" />
-                                            <div class="dugem-overlay"></div>
+                                            <div class="Magnus-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
@@ -706,7 +715,7 @@
                                 <h5 class="head-title-2"> / RESERVATION </h5>
                                 <h2 class="head-title-1"> Book A Table Now
                                     <span class="title-end">.</span></h2>
-                                <p class="dugem-text"> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor. Sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+                                <p class="Magnus-text"> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor. Sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
                             </div>
                             <div class="contact-form-style col-span-6 sm:col-span-12 res:col-span-12">
                                 <input type="text" name="your-name" size="40" placeholder="Name">
@@ -775,6 +784,15 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/lightgallery.min.js"></script>
     <script src="js/aos.js"></script>
+    <script>
+        window.onload = function exampleFunction() {
+          setTimeout(() => {
+            $("#preloader").fadeOut(1000, function () {
+              $("#preloader").hide();
+            });
+          }, 2000);
+        };
+      </script>
 </body>
 
 </html>

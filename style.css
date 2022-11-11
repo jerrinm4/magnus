@@ -761,6 +761,7 @@ header {
 .logo {
   display: flex;
   float: left;
+  width: 160px;
   margin-left: 10px;
   margin-right: 28px;
 }
@@ -914,7 +915,7 @@ header {
 
 .image-background {
   position: absolute;
-  background-image: url("img/events/sad.png");
+  background-image: url("img/logo/sad.png");
   left: 0;
   right: 0;
   top: 0;
