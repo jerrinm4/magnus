@@ -1430,7 +1430,7 @@ header {
 /*  3f.  TESTIMONIAL SECTION
 /*-----------------------------------------------------------------------------------*/
 .testimonial-block {
-  background-image: url(img/testimonial-bg.png);
+  background-image: url(img/background/1920x796.jpg);
   position: relative;
   padding: 290px 0px 210px 0px;
   background-size: cover;
@@ -1862,7 +1862,7 @@ header {
 /*-----------------------------------------------------------------------------------*/
 /*Waiting*/
 .waiting-block {
-  background-image: url(img/banner-reservation-bg.png);
+  background-image: url(img/background/1920x338.jpg);
   position: relative;
   padding: 170px 0px 105px 0px;
   background-size: cover;
