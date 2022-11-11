@@ -18,6 +18,30 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <link rel="icon" href="img/logo.png" />
+    <style>
+        table img,
+        .event-mobile img,
+        .swiper-slide img{
+            border-radius: 14px !important;
+            box-shadow: 0 0px 20px rgba(89, 89, 89, 0.632);
+        }
+
+        table img {
+            width: 300px;
+        }
+
+        .event-mobile li {
+
+            background-color: rgba(0, 0, 0, 0.219) !important;
+        }
+
+        .event-mobile img {
+            width: 340px;
+        }
+        .global-block img {
+            border-radius: 14px !important;
+        }
+    </style>
     <script>
         document.documentElement.className = "js";
     </script>
@@ -43,7 +67,7 @@
                             <!-- LOGO START
                                 ============================================= -->
                             <div class="logo">
-                                <a href="index.html"><img src="img/logo.png" alt="Dugem Logo" /></a>
+                                <a href="eindex.html"><img src="img/logo/logo.png" alt="Dugem Logo" /></a>
                             </div>
                             <!-- LOGO END -->
                         </div>
@@ -59,7 +83,7 @@
                                 <!-- Sample menu definition -->
                                 <ul id="main-menu" class="sm sm-clean">
                                     <li class="menu-item">
-                                        <a href="index.html" class="menu-link active">Home</a>
+                                        <a href="eindex.html" class="menu-link active">Home</a>
                                     </li>
                                     <li class="menu-item">
                                         <a href="about.html" class="menu-link">About</a>
@@ -106,11 +130,11 @@
                     <!-- <p>At vero eos et accusamus et iusto odio dignissimos</p> -->
                     <!-- <p> ducimus qui blanditiis</p> -->
                     <br />
-                    <a href="#" class="button-basic-1" data-aos="fade-up">All Events</a>
+                    <a href="#eventss" class="button-basic-1" data-aos="fade-up">All Events</a>
                 </div>
                 <div class="video-background">
                     <video autoplay muted loop id="myVideo">
-                        <source src="img/concert-loop.mp4" type="video/mp4" />
+                        <source src="img/video/concert-loop.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
@@ -167,7 +191,7 @@
             </div>
             <!-- GlOBAL BLOCK END -->
             <!-- TABLE EVENTS -->
-            <div class="table-events">
+            <div id="eventss" class="table-events">
                 <div class="background-overlay"></div>
                 <div class="container">
                     <div class="the-title text-center" data-aos="fade-up">
@@ -180,27 +204,6 @@
                             Intercollage Fest.
                         </p>
                     </div>
-                    <style>
-                        table img,
-                        .event-mobile img,
-                        .swiper-slide img {
-                            border-radius: 14px !important;
-                            box-shadow: 0 0px 20px rgba(0, 187, 255, 0.3);
-                        }
-
-                        table img {
-                            width: 300px;
-                        }
-
-                        .event-mobile li {
-
-                            background-color: rgba(0, 0, 0, 0.219) !important;
-                        }
-
-                        .event-mobile img {
-                            width: 340px;
-                        }
-                    </style>
                     <table class="event">
                         <tr>
                             <td class="event-thumb-head">Competition</td>
@@ -521,7 +524,7 @@
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
-                                        <a href="single-post.html">
+                                        <a>
                                             <img src="img/events/16 dj room.png" alt="latest-news-img-1" />
                                             <div class="dugem-overlay"></div>
                                         </a>
@@ -539,14 +542,14 @@
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
-                                        <a href="single-post.html">
+                                        <a>
                                             <img src="img/events/14 fashion show.png" alt="latest-news-img-2" />
                                             <div class="dugem-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
                                         <div class="post-category">
-                                            <a class="button-basic-1"></a>
+                                            <a class="button-basic-1">Fashion Show</a>
                                         </div>
 
                                         <div class="post-date">
@@ -558,7 +561,7 @@
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
-                                        <a href="single-post.html">
+                                        <a>
                                             <img src="img/events/18 ai expo.png" alt="latest-news-img-3" />
                                             <div class="dugem-overlay"></div>
                                         </a>
@@ -569,7 +572,7 @@
                                         </div>
                                         <div class="post-title">
                                             <h3>
-                                                <a href="single-post.html"> info </a>
+                                                <a> info </a>
                                             </h3>
                                         </div>
                                         <div class="post-date">
@@ -581,14 +584,14 @@
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
-                                        <a href="single-post.html">
-                                            <img src="img/latest-blog-news-4.png" alt="latest-news-img-4" />
+                                        <a>
+                                            <img src="img/events/17 meta vers.png" alt="latest-news-img-4" />
                                             <div class="dugem-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
                                         <div class="post-category">
-                                            <a href="#" class="button-basic-1">Event News</a>
+                                            <a href="#" class="button-basic-1">Meta Vers</a>
                                         </div>
 
                                         <div class="post-date">
@@ -600,18 +603,18 @@
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
-                                        <a href="single-post.html">
-                                            <img src="img/latest-blog-news-5.png" alt="latest-news-img-5" />
+                                        <a>
+                                            <img src="img/events/14 fashion show.png" alt="latest-news-img-2" />
                                             <div class="dugem-overlay"></div>
                                         </a>
                                     </div>
                                     <div class="post-content-wrap">
                                         <div class="post-category">
-                                            <a href="#" class="button-basic-1">Contest</a>
+                                            <a class="button-basic-1">Fashion Show</a>
                                         </div>
 
                                         <div class="post-date">
-                                            <a href="#"><span>April 30, 2021</span></a>
+                                            <a><span>April 30, 2021</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -727,7 +730,7 @@
                         <div class="row">
                             <div class="foot-col column column-1 text-center clearfix">
                                 <div class="logo-footer">
-                                    <a href="index.html"><img src="img/logo.png" height="150%" width="250 %"
+                                    <a href="eindex.html"><img src="img/logo/logo.png" height="150%" width="250 %"
                                             alt="Logo-Footer" /></a>
                                 </div>
                             </div>
