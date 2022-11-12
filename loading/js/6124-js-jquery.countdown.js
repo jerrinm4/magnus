@@ -3,7 +3,7 @@
 
 		function i() {
 
-			eventDate = (Date.parse(new Date('Tue Dec 12 2022').toDateString())) / 1e3;
+			eventDate = (Date.parse(new Date('"Dec 6, 2022 00:00:00').toDateString())) / 1e3;
 
 			currentDate = Math.floor($.now() / 1e3);
 

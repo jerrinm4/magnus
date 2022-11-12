@@ -6,6 +6,10 @@
             loop: true,
             speed: 2000,
             centeredSlides:true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 480: {
                     slidesPerView: 1,
@@ -39,6 +43,10 @@
             spaceBetween: 30,
             loop: true,
             speed: 2000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 480: {
                     slidesPerView: 1,
