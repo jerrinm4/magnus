@@ -1,3 +1,6 @@
+function just(time){
+  return (time<10)?"0"+time:time;
+}
 (function ($) {
   "use strict";
   $(document).ready(function () {
@@ -15,14 +18,14 @@
             // "&nbsp;&nbsp;"
           if (distance > 0) {
             document.getElementById("days").innerHTML =
-              Math.floor(distance / day) ;
+              just(Math.floor(distance / day)) ;
             document.getElementById("hours").innerHTML =
-              Math.floor((distance % day) / hour) ;
+            just(Math.floor((distance % day) / hour)) ;
             document.getElementById("minutes").innerHTML =
-              Math.floor((distance % hour) / minute) ;
-            document.getElementById("seconds").innerHTML = Math.floor(
+            just(Math.floor((distance % hour) / minute)) ;
+            document.getElementById("seconds").innerHTML = just(Math.floor(
               (distance % minute) / second
-            );
+            ));
           }
           //do something later when date is reached
           else {
