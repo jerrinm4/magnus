@@ -82,12 +82,24 @@
     font-size: 43px;
 }
 .magstart{
-    padding: auto;
+    padding-left: 0px;
     padding-bottom: 30px;
 }
 .magstart img{
-    margin: 0 auto;
+    visibility: hidden;
 }
+@media (max-width: 769px) {
+.magstart img{
+    visibility: visible;
+    width: 200px;
+    margin: 0 auto;
+}}
+.countdown .seconds-count  {
+    margin-right: 0px;
+    padding-right: 0px;
+    content: '';
+  }
+
     </style>
     <script>
         document.documentElement.className = "js";

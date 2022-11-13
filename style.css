@@ -1072,7 +1072,7 @@ header {
 
 .countdown .float:last-child:after {
   position: absolute;
-  margin-right: 0px;
+  margin: 0px;
   content: '';
 }
 

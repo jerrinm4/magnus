@@ -621,7 +621,7 @@
 @media only screen and (max-width: 480px) {
 .countdown-title h2 {
     font-size: 6.6rem;
-    text-align: left;
+    text-align: center;
 }
 
   .single-event-wrap .float {
@@ -680,9 +680,7 @@ grid-gap: 3rem;
     padding-top: 30px;
     text-align: center;
 }
-.days-count.float:first-child {
-    margin-left: 23px;
-}
+
 .blog-slide .swiper-pagination {
     position: relative;
     padding-top: 25px;
