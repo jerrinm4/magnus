@@ -2,23 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta
-    name="MAGNUS-2K22"
-    content="https://magnus2k22.tech/img/logo/meta.png"
-  />
-  <meta property="og:site_name" content="Magnus 2K22 @ YMBC" />
-  <meta property="og:title" content="Magnus 2K22 @ YMBC" />
-  <meta
-    property="og:description"
-    content="Departement of Computer Application Presents Magnus
-    2k22 Intercollage Fest @ YMBC"
-  />
-  <meta property="og:image" content="https://magnus2k22.tech/img/logo/meta.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="300" />
-  <meta property="og:image:height" content="300" />
-  <meta property="og:url" content="https://magnus2k22.tech" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="MAGNUS-2K22" content="https://magnus2k22.tech/img/logo/meta.png" />
+    <meta property="og:site_name" content="Magnus 2K22 @ YMBC" />
+    <meta property="og:title" content="Magnus 2K22 @ YMBC" />
+    <meta property="og:description" content="Departement of Computer Application Presents Magnus
+    2k22 Intercollage Fest @ YMBC" />
+    <meta property="og:image" content="https://magnus2k22.tech/img/logo/meta.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://magnus2k22.tech" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!-- SYLESHEETS
             ============================================= -->
@@ -34,10 +37,11 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    <link rel="icon" href="img/logo/logo.png" />
-    <link rel="stylesheet" id="themify-icons-css" href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css" type="text/css" media="all">
+    <link rel="stylesheet" id="themify-icons-css"
+        href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css" type="text/css"
+        media="all">
     <style>
-        #preloader{
+        #preloader {
             background: #000 url(img/logo/load.gif) no-repeat center center;
             background-size: 25%;
             height: 100vh;
@@ -51,7 +55,7 @@
 
         table img,
         .event-mobile img,
-        .swiper-slide img{
+        .swiper-slide img {
             border-radius: 14px !important;
             box-shadow: 0 0px 20px rgba(89, 89, 89, 0.632);
         }
@@ -68,39 +72,54 @@
         .event-mobile img {
             width: 340px;
         }
+
         .global-block img {
             border-radius: 14px !important;
         }
 
         .countdown .float:after {
-    position: absolute;
-    content: ':';
-    right: -6px;
-    top: -10px;
-    color: #fff;
-    font-family: 'Roboto';
-    font-size: 43px;
-}
-.magstart{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-}
-.magstart img{
-    display: none;
-}
-@media (max-width: 769px) {
-.magstart img{
-    display:block;
-    width: 200px;
-    margin: 0 auto;
-}}
-.countdown .seconds-count  {
-    margin-right: 0px;
-    padding-right: 0px;
-    content: '';
-  }
+            position: absolute;
+            content: ':';
+            right: -6px;
+            top: -10px;
+            color: #fff;
+            font-family: 'Roboto';
+            font-size: 43px;
+        }
 
+        .magstart {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+        }
+
+        .magstart img {
+            display: none;
+        }
+
+        @media (max-width: 769px) {
+            .magstart img {
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+            }
+
+            .hide-button-1 {
+                display: none;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .hide-button-2 {
+                display: none;
+            }
+        }
+
+        .countdown .seconds-count {
+            margin-right: 0px;
+            padding-right: 0px;
+            content: '';
+        }
     </style>
     <script>
         document.documentElement.className = "js";
@@ -116,7 +135,7 @@
 
 <body class="demo-1">
     <!-- preloader -->
-<div id="preloader"></div>
+    <div id="preloader"></div>
     <!-- preloader -->
     <!--MAIN WRAPPER START-->
     <div class="main-wrapper clearfix">
@@ -209,8 +228,7 @@
                                 <!-- <a href="#" class="button-basic-1">Electro</a> -->
                                 <h2 data-aos="fade-up">MAGNUS 2<span style="color: rgb(255, 0, 0) ;">K</span>22</h2>
                                 <h5 data-aos="fade-up">/ 06 DECEMBER 2022</h5>
-                                <img src="img/logo/logo.png"
-                                    alt="Logo" />
+                                <img src="img/logo/logo.png" alt="Logo" />
                                 <!-- <p class="Dugem-text" data-aos="fade-up">event info.</p> -->
                             </div>
                             <div class="global-countdown">
@@ -244,7 +262,7 @@
                             </div>
                         </div><br>
                         <div class="global-img col-span-5 sm:col-span-12 res:col-span-12">
-                            
+
                             <div class="item-content">
                                 <div class="img-header">
                                     <a class="pattern" href="#">
@@ -300,7 +318,8 @@
                             </td>
                             <td class="event-artist">TREASURE &amp; HUNT</td>
                             <td class="event-ticket-link">
-                                <a href="#" class="button button-white rsvp">Register</a>
+                                <a href="https://forms.gle/Bo8NQrM2Zb4M3DEL8"
+                                    class="button button-white rsvp">Register</a>
                                 <!-- <a href="#" class="button button-white">REGISTER</a> -->
                             </td>
                         </tr>
@@ -313,9 +332,10 @@
                                     <img src="img/events/2 Hackathon.png" alt="table-2" />
                                 </a>
                             </td>
-                            <td class="event-artist">HackathonS</td>
+                            <td class="event-artist">Hackathon</td>
                             <td class="event-ticket-link">
-                                <a href="#" class="button button-white rsvp">Register</a>
+                                <a href="https://forms.gle/qXiLT6u76KUkFVa66"
+                                    class="button button-white rsvp">Register</a>
                             </td>
                         </tr>
                         <tr class="space">
@@ -329,7 +349,8 @@
                             </td>
                             <td class="event-artist">Ideathon</td>
                             <td class="event-ticket-link">
-                                <a href="#" class="button button-white rsvp">Register</a>
+                                <a href="https://forms.gle/866vGo5KBMqt8bYf6"
+                                    class="button button-white rsvp">Register</a>
                             </td>
                         </tr>
                         <tr class="space">
@@ -343,7 +364,8 @@
                             </td>
                             <td class="event-artist">Football</td>
                             <td class="event-ticket-link">
-                                <a href="#" class="button button-white rsvp">Register</a>
+                                <a href="https://forms.gle/pCe4UzUCJHFM4E6b6"
+                                    class="button button-white rsvp">Register</a>
                             </td>
                         </tr>
                         <tr class="space">
@@ -361,7 +383,7 @@
                                 </span>
                                 <p><span>Event :</span> <a href="#">TREASURE HUNT </a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/Bo8NQrM2Zb4M3DEL8" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -372,7 +394,7 @@
                                 </span>
                                 <p><span>Event :</span> <a href="#">Hackathon</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/qXiLT6u76KUkFVa66" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -383,7 +405,7 @@
                                 </span>
                                 <p><span>Event :</span> <a href="#">Ideathon</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/866vGo5KBMqt8bYf6" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -394,7 +416,7 @@
                                 </span>
                                 <p><span>Event :</span> <a href="#">Football</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/pCe4UzUCJHFM4E6b6" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -406,7 +428,33 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">Cricket</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/CH38KN7mgqBLP93J8" class="button-basic-1">REGISTER</a>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="img-thumb">
+                                    <a href="single-event.html">
+                                        <img src="img/events/20.png" alt="table-1-5" />
+                                    </a>
+                                </span>
+                                <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                                <p><span>Event :</span> <a href="#">Speed cubing</a></p>
+                                <p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1GmJhaq9hQ_ZAMe3zQPUkC2fBsow6MbA4FJkbWGbk75bmvg/viewform"
+                                        class="button-basic-1">REGISTER</a>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="img-thumb">
+                                    <a href="single-event.html">
+                                        <img src="img/events/21.png" alt="table-1-5" />
+                                    </a>
+                                </span>
+                                <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                                <p><span>Event :</span> <a href="#">Movie Quiz</a></p>
+                                <p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0U8FbhHwkfYxiKkt8PgED0IKyvlVVS8yfe1zTtrX3N7_EqA/viewform"
+                                        class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -418,7 +466,7 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">Badminton</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/z4PqYaky4WnGTCz79" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -442,7 +490,8 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">Error Finding</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2sauSoJ2dp-qy0n-ezex0hQn9nnLlWQPDSYsgll74EJ6heg/viewform"
+                                        class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -454,7 +503,7 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">Spot Photography</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/X9oNUgQ3hN48hi2h8" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -466,7 +515,8 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">60 Sec Video</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+
+                                    <a href="https://forms.gle/tnEnzdn7VvtHtNHm9" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -478,7 +528,7 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">FiFa</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/7o8wDFR8fgGygiRS8" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -490,7 +540,7 @@
                                 <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
                                 <p><span>Event :</span> <a href="#">Valorant</a></p>
                                 <p>
-                                    <a href="#" class="button-basic-1">REGISTER</a>
+                                    <a href="https://forms.gle/kv6Ka37zfj18BtDG6" class="button-basic-1">REGISTER</a>
                                 </p>
                             </li>
                             <li>
@@ -507,8 +557,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="button-view text-center">
+                    <div class="button-view text-center hide-button-1">
                         <a href="event.html" class="button-basic-1" data-aos="fade-up">VIEW ALL EVENT</a>
+                    </div>
+                    <div class="button-view text-center hide-button-2">
+                        <a href="about.html" class="button-basic-1" data-aos="fade-up">ABOUT US</a>
                     </div>
                 </div>
             </div>
@@ -541,7 +594,7 @@
                                             <a href="#" class="button-basic-1">Meta Vers</a>
                                         </div>
                                         <div class="post-date">
-                                            <a href="#"><span>April 30, 2021</span></a>
+                                            <a href="#"><span>Dec 07, 2022</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -560,7 +613,7 @@
                                         </div>
 
                                         <div class="post-date">
-                                            <a><span>April 30, 2021</span></a>
+                                            <a><span>Dec 08, 2022</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -578,12 +631,12 @@
                                             <a class="button-basic-1">DJ Room</a>
                                         </div>
                                         <div class="post-date">
-                                            <a><span>August 30, 2021</span></a>
+                                            <a><span>Dec 07, 2022</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
@@ -597,12 +650,12 @@
                                             <a href="#" class="button-basic-1">Ai Expo</a>
                                         </div>
                                         <div class="post-date">
-                                            <a href="#"><span>April 30, 2021</span></a>
+                                            <a href="#"><span>Dec 07, 2022</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="swiper-slide">
                                 <div class="swiper-post">
                                     <div class="post-thumb">
@@ -617,7 +670,7 @@
                                         </div>
 
                                         <div class="post-date">
-                                            <a><span>April 30, 2021</span></a>
+                                            <a><span>Dec 07, 2022</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -628,8 +681,8 @@
                 </div>
             </div>
             <!-- BLOG LOOP END -->
-            
-    <!-- swiper-container,"swiper-wrapper" -->
+
+            <!-- swiper-container,"swiper-wrapper" -->
 
             <!-- TESTIMONIAL BLOCK -->
             <div class="testimonial-block">
@@ -762,7 +815,8 @@
                                 <div class="social-footer">
                                     <ul>
                                         <li class="soc-icon">
-                                            <a href="https://www.instagram.com/magnus_2k22_/"><i class="ti-instagram"></i> Instagram</a>
+                                            <a href="https://www.instagram.com/magnus_2k22_/"><i
+                                                    class="ti-instagram"></i> Instagram</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -798,13 +852,13 @@
     <script src="js/main.js"></script>
     <script>
         window.onload = function exampleFunction() {
-          setTimeout(() => {
-            $("#preloader").fadeOut(1000, function () {
-              $("#preloader").hide();
-            });
-          }, 2000);
+            setTimeout(() => {
+                $("#preloader").fadeOut(1000, function () {
+                    $("#preloader").hide();
+                });
+            }, 2000);
         };
-        </script>
+    </script>
 </body>
 
 </html>
