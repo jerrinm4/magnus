@@ -1226,7 +1226,7 @@ Notes: To change the font, install it manually with convert the download zipped 
  }
 
  .event tbody tr:hover {
-   background-color: #007aff;
+   background-color: #007bff94;
  }
 
  .event-section .event a {
