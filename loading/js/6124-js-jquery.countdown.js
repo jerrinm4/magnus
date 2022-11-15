@@ -2,9 +2,8 @@
 	$.fn.countdown = function (t) {
 
 		function i() {
-// new Date('Nov 6 2022 00:00:00').toDateString()
-			eventDate = 1668493800;
-// (Date.parse(new Date('Nov 11 2022 11:00:00').toDateString())) / 1e3;
+
+			eventDate =(Date.parse(new Date('Dec 6 2022 00:00:00').toDateString())) / 1e3;
 			currentDate = Math.floor($.now() / 1e3);
 
 			if (eventDate <= currentDate) {
