@@ -54,15 +54,25 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!-- SYLESHEETS
             ============================================= -->
-
+    <style>
+      #preloader {
+        background: #000 url(img/logo/load.gif) no-repeat center center;
+        background-size: 25%;
+        height: 100vh;
+        background-blend-mode: difference;
+        width: 100%;
+        position: fixed;
+        z-index: 200;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- <link rel="stylesheet" href="css/swiper.min.css" type="text/css" /> -->
-    <link rel="stylesheet" href="css/lightgallery.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/lightgallery.min.css" type="text/css" /> -->
     <link rel="stylesheet" href="css/plugin.css" type="text/css" />
-    <link rel="stylesheet" href="css/sm-core-css.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/sm-core-css.css" type="text/css" /> -->
     <link rel="stylesheet" href="css/sm-clean.css" type="text/css" />
     <link rel="stylesheet" href="css/thaw-flex.css" type="text/css" />
     <link rel="stylesheet" href="css/font.css" type="text/css" />
@@ -80,15 +90,6 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
     <style>
-      #preloader {
-        background: #000 url(img/logo/load.gif) no-repeat center center;
-        background-size: 25%;
-        height: 100vh;
-        background-blend-mode: difference;
-        width: 100%;
-        position: fixed;
-        z-index: 200;
-      }
       table img {
         width: 200px;
       }
@@ -333,7 +334,11 @@
           </div>
           <div class="video-background">
             <video autoplay muted loop id="myVideo">
-              <source src="img/video/concert-loop.mp4" type="video/mp4" />
+              <source
+                media="(min-width: 769px)"
+                src="img/video/concert-loop.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
@@ -444,7 +449,9 @@
                     <img
                       width="70"
                       height="100"
-                      src="img/events/12 valorant.png"
+                      src="img/events_blur/12 valorant.png"
+                      class="lozad lozad1"
+                      data-src="img/events/12 valorant.png"
                       alt="table-5"
                     />
                   </a>
@@ -452,7 +459,8 @@
                 <td class="event-artist">Valorant</td>
                 <td class="event-ticket-link">
                   <a
-                    target="_blank" href="https://forms.gle/gPDhvnyDoukDbhiRA"
+                    target="_blank"
+                    href="https://forms.gle/gPDhvnyDoukDbhiRA"
                     class="button button-white rsvp"
                     >Register</a
                   >
@@ -467,7 +475,9 @@
                     <img
                       width="70"
                       height="100"
-                      src="img/events/5 cricket.png"
+                      src="img/events_blur/5 cricket.png"
+                      class="lozad lozad1"
+                      data-src="img/events/5 cricket.png"
                       alt="table-5"
                     />
                   </a>
@@ -475,7 +485,8 @@
                 <td class="event-artist">Cricket</td>
                 <td class="event-ticket-link">
                   <a
-                    target="_blank" href="https://forms.gle/xwBqUsbwCZPfUMHv8"
+                    target="_blank"
+                    href="https://forms.gle/xwBqUsbwCZPfUMHv8"
                     class="button button-white rsvp"
                     >Register</a
                   >
@@ -490,7 +501,9 @@
                     <img
                       width="70"
                       height="100"
-                      src="img/events/3 ideathon.png"
+                      src="img/events_blur/3 ideathon.png"
+                      class="lozad lozad1"
+                      data-src="img/events/3 ideathon.png"
                       alt="table-3"
                     />
                   </a>
@@ -498,7 +511,8 @@
                 <td class="event-artist">Ideathon</td>
                 <td class="event-ticket-link">
                   <a
-                    target="_blank" href="https://forms.gle/866vGo5KBMqt8bYf6"
+                    target="_blank"
+                    href="https://forms.gle/866vGo5KBMqt8bYf6"
                     class="button button-white rsvp"
                     >Register</a
                   >
@@ -513,7 +527,9 @@
                     <img
                       width="70"
                       height="100"
-                      src="img/events/4 football.png"
+                      src="img/events_blur/4 football.png"
+                      class="lozad lozad1"
+                      data-src="img/events/4 football.png"
                       alt="table-4"
                     />
                   </a>
@@ -521,7 +537,8 @@
                 <td class="event-artist">Football</td>
                 <td class="event-ticket-link">
                   <a
-                    target="_blank" href="https://forms.gle/pCe4UzUCJHFM4E6b6"
+                    target="_blank"
+                    href="https://forms.gle/pCe4UzUCJHFM4E6b6"
                     class="button button-white rsvp"
                     >Register</a
                   >
@@ -546,7 +563,8 @@
                   <p><span>Event :</span> <a href="#">Valorant</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/kv6Ka37zfj18BtDG6"
+                      target="_blank"
+                      href="https://forms.gle/kv6Ka37zfj18BtDG6"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -567,7 +585,8 @@
                   <p><span>Event :</span> <a href="#">Cricket</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/CH38KN7mgqBLP93J8"
+                      target="_blank"
+                      href="https://forms.gle/CH38KN7mgqBLP93J8"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -587,7 +606,8 @@
                   <p><span>Event :</span> <a href="#">Ideathon</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/866vGo5KBMqt8bYf6"
+                      target="_blank"
+                      href="https://forms.gle/866vGo5KBMqt8bYf6"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -607,7 +627,8 @@
                   <p><span>Event :</span> <a href="#">Football</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/pCe4UzUCJHFM4E6b6"
+                      target="_blank"
+                      href="https://forms.gle/pCe4UzUCJHFM4E6b6"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -644,7 +665,8 @@
                   <p><span>Event :</span> <a href="#">TREASURE HUNT </a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/Bo8NQrM2Zb4M3DEL8"
+                      target="_blank"
+                      href="https://forms.gle/Bo8NQrM2Zb4M3DEL8"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -664,7 +686,8 @@
                   <p><span>Event :</span> <a href="#">Hackathon</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/qXiLT6u76KUkFVa66"
+                      target="_blank"
+                      href="https://forms.gle/qXiLT6u76KUkFVa66"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -686,7 +709,8 @@
                   <p><span>Event :</span> <a href="#">Speed cubing</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd1GmJhaq9hQ_ZAMe3zQPUkC2fBsow6MbA4FJkbWGbk75bmvg/viewform"
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd1GmJhaq9hQ_ZAMe3zQPUkC2fBsow6MbA4FJkbWGbk75bmvg/viewform"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -707,7 +731,8 @@
                   <p><span>Event :</span> <a href="#">Movie Quiz</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf0U8FbhHwkfYxiKkt8PgED0IKyvlVVS8yfe1zTtrX3N7_EqA/viewform"
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSf0U8FbhHwkfYxiKkt8PgED0IKyvlVVS8yfe1zTtrX3N7_EqA/viewform"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -729,7 +754,8 @@
                   <p><span>Event :</span> <a href="#">Error Finding</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd2sauSoJ2dp-qy0n-ezex0hQn9nnLlWQPDSYsgll74EJ6heg/viewform"
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd2sauSoJ2dp-qy0n-ezex0hQn9nnLlWQPDSYsgll74EJ6heg/viewform"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -750,7 +776,8 @@
                   <p><span>Event :</span> <a href="#">Spot Photography</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/X9oNUgQ3hN48hi2h8"
+                      target="_blank"
+                      href="https://forms.gle/X9oNUgQ3hN48hi2h8"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -771,7 +798,8 @@
                   <p><span>Event :</span> <a href="#">60 Sec Video</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/tnEnzdn7VvtHtNHm9"
+                      target="_blank"
+                      href="https://forms.gle/tnEnzdn7VvtHtNHm9"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -792,7 +820,8 @@
                   <p><span>Event :</span> <a href="#">FiFa</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/7o8wDFR8fgGygiRS8"
+                      target="_blank"
+                      href="https://forms.gle/7o8wDFR8fgGygiRS8"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -813,7 +842,8 @@
                   <p><span>Event :</span> <a href="#">Mini Militia</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/Js3RzpVDi6pyWhAb9"
+                      target="_blank"
+                      href="https://forms.gle/Js3RzpVDi6pyWhAb9"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -834,7 +864,8 @@
                   <p><span>Event :</span> <a href="#">Group Dance</a></p>
                   <p>
                     <a
-                      target="_blank" href="https://forms.gle/qRPgELa63cMfQCKK6"
+                      target="_blank"
+                      href="https://forms.gle/qRPgELa63cMfQCKK6"
                       class="button-basic-1"
                       >REGISTER</a
                     >
@@ -1177,11 +1208,10 @@
           $("#preloader").fadeOut(1000, function () {
             $("#preloader").hide();
           });
-        }, 2000);
+        }, 500);
       };
 
       const button = document.querySelector(".btn-top");
-
       const displayButton = () => {
         window.addEventListener("scroll", () => {
           if (window.scrollY > 100) {
@@ -1197,8 +1227,8 @@
         load: function (el) {
           el.src = el.dataset.src;
           el.onload = function () {
-            el.classList.remove("lozad1");
             el.classList.add("fade-in-image");
+            el.classList.remove("lozad1");
           };
         },
       }).observe();

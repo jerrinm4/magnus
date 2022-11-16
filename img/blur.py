@@ -6,7 +6,7 @@ def resize(file):
     image = Image.open(os.path.join(d,file))
     print(image.size)
     image = image.convert('RGBA')
-    image = image.resize((image.size[0]//r,image.size[1]//15),Image.ANTIALIAS)
+    image = image.resize((image.size[0]//r,image.size[1]//r),Image.ANTIALIAS)
     image = image.filter(ImageFilter.GaussianBlur(radius = 5))
     image.save(os.path.join(dbl,file),optimize=True,quality=95)
 
