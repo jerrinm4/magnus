@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta
+      name="msapplication-config"
+      content="/img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="Magnus-2K22 | YMBC"
+      content="https://magnus2k22.tech/img/logo/meta.png"
+    />
+    <meta property="og:site_name" content="Magnus 2K22 @ YMBC" />
+    <meta property="og:title" content="Magnus 2K22 @ YMBC" />
+    <meta
+      property="og:description"
+      content="Department of Computer Application Presents Magnus 2k22
+  Intercollege Fest @ YMBC"
+    />
+    <meta
+      property="og:image"
+      content="https://magnus2k22.tech/img/logo/meta.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://magnus2k22.tech" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1"
+    />
+    <meta name="description" content="YMBC Magnus 2k22" />
+    <meta name="author" content="Magnus 2K22 @ YMBC" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="UTF-8" />
+    <title>MAGNUS 2K22</title>
+    <link rel="stylesheet" href="loading/css/css-bootstrap.css" />
+    <link rel="stylesheet" href="loading/css/css-jquery.fullPage.css" />
+    <link
+      rel="stylesheet"
+      href="loading/css/css-jquery.mCustomScrollbar.min.css"
+    />
+    <link rel="stylesheet" href="loading/css/css-font-awesome.min.css" />
+    <link rel="stylesheet" href="loading/css/css-owl.carousel.css" />
+    <link rel="stylesheet" href="loading/css/css-glitch.css" />
+    <link rel="stylesheet" href="loading/css/css-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One"
+      rel="stylesheet"
+    />
+
+    <style>
+      #preloader {
+        background: #000 url(img/logo/load.gif) no-repeat center center;
+        background-size: 25%;
+        height: 100vh;
+        background-blend-mode: difference;
+        width: 100%;
+        position: fixed;
+        z-index: 200;
+      }
+
+      svg {
+        margin-top: 6vh;
+        font-family: "Russo One", sans-serif;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      svg text {
+        text-transform: uppercase;
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #3675a0;
+        font-size: 140px;
+      }
+
+      @keyframes stroke {
+        0% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: rgb(255, 0, 0);
+          stroke-dashoffset: 25%;
+          stroke-dasharray: 0 50%;
+          stroke-width: 2;
+        }
+
+        70% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: rgb(255, 0, 0);
+        }
+
+        80% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: rgb(255, 0, 0);
+          stroke-width: 3;
+        }
+
+        100% {
+          fill: rgba(54, 95, 160, 0);
+          stroke: rgb(255, 0, 0);
+          stroke-dashoffset: -25%;
+          stroke-dasharray: 50% 0;
+          stroke-width: 0;
+        }
+      }
+
+      .glow-on-hover {
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+      }
+
+      .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+
+      .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+
+        50% {
+          background-position: 400% 0;
+        }
+
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      @media (max-width: 767px) {
+        svg {
+          margin-top: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+    <!-- preloader -->
+    <div class="space"></div>
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+      <!-- HEADER -->
+      <header class="site-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-4">
+              <a href="eindex.html" class="no-line logotype">magnus</a>
+            </div>
+            <div class="col-xs-8 text-right social-icons-wrap">
+              <div class="social-icons">
+                <a href="https://www.instagram.com/magnus_2k22_/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+              <div class="need-social">
+                <div class="opened">we are social</div>
+                <div class="closes"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /HEADER -->
+
+      <!-- CONTENT -->
+      <svg viewBox="0 0 1320 300">
+        <text x="50%" dy=".35em" text-anchor="middle">magnus 2k22</text>
+      </svg>
+      <section class="site-content">
+        <div id="fullpage" class="fullpage-wrapper">
+          <div class="all-section">
+            <div class="sections" data-title="Home">
+              <div class="section-content">
+                <div class="section-wrap">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 text-center">
+                        <!-- TIMER -->
+                        <div class="glitch-wrap glitch" data-time="">
+                          <div class="fadein">
+                            <div class="glitch-clock is-off">
+                              <div class="glitch-time">
+                                <div class="glitch-before">
+                                  <div class="first-numb"></div>
+                                  <i class="i1"></i>
+                                  <div class="time-dott">:</div>
+                                  <div class="glitch-triangle">
+                                    <div class="clip-figure">
+                                      <div class="mask-first">
+                                        <div class="mask-second">
+                                          <div class="clip-numb">
+                                            <div class="second-numb"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <i class="i2"></i>
+                                  <div class="time-dott-sec">:</div>
+                                  <div class="third-numb"></div>
+                                  <i class="i3"></i>
+                                </div>
+                                <div class="glitch-content">
+                                  <div class="first-numb"></div>
+                                  <i class="i1"></i>
+                                  <div class="time-dott">:</div>
+                                  <div class="glitch-triangle">
+                                    <div class="clip-figure">
+                                      <div class="mask-first">
+                                        <div class="mask-second">
+                                          <div class="clip-numb">
+                                            <div class="second-numb"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <i class="i2"></i>
+                                  <div class="time-dott-sec">:</div>
+                                  <div class="third-numb"></div>
+                                  <i class="i3"></i>
+                                </div>
+                                <div class="glitch-after">
+                                  <div class="first-numb"></div>
+                                  <i class="i1"></i>
+                                  <div class="time-dott">:</div>
+                                  <div class="glitch-triangle">
+                                    <div class="clip-figure">
+                                      <div class="mask-first">
+                                        <div class="mask-second">
+                                          <div class="clip-numb">
+                                            <div class="second-numb"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <i class="i2"></i>
+                                  <div class="time-dott-sec">:</div>
+                                  <div class="third-numb"></div>
+                                  <i class="i3"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="glitch-figure">
+                              <div class="glitch-triang"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /TIMER -->
+
+                        <h2 class="et-description">
+                          LOADING
+                          <b><span style="color: rgb(255, 0, 0)">>>></span></b>
+                          MAGNUS 2<span style="color: rgb(255, 0, 0)">K</span>22
+                        </h2>
+                        <div class="et-description-small">
+                          Department of Computer Application Presents Magnus
+                          2k22 Intercollege Fest.
+                        </div>
+                      </div>
+                      <!-- col-xs-12 -->
+                    </div>
+                    <!-- row -->
+                  </div>
+                  <!-- container -->
+                </div>
+                <!-- section-wrap -->
+                <center>
+                  <a href="/eindex.html"
+                    ><button class="glow-on-hover" type="button">
+                      EXPLORE!
+                    </button></a
+                  >
+                </center>
+              </div>
+              <!-- section-content -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /CONTENT -->
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 text-center-xs text-right">
+              <div class="copyright">&copy; Magnus 2K22.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /FOOTER -->
+    </div>
+    <!-- /WRAPPER -->
+
+    <script src="loading/js/611-js-jquery-1.11.1.min.js"></script>
+    <script src="loading/js/4490-js-bootstrap.min.js"></script>
+    <script src="loading/js/871-js-jquery.fullPage.min.js"></script>
+    <script src="loading/js/7534-js-jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="loading/js/4702-js-jquery.touchSwipe.min.js"></script>
+    <script src="loading/js/2650-js-jquery.swiper.js"></script>
+    <script src="loading/js/4017-js-owl.carousel.min.js"></script>
+    <script src="loading/js/7812-js-jquery.inview.min.js"></script>
+    <script src="loading/js/9639-js-jquery.placeholder.min.js"></script>
+    <script src="loading/js/8984-js-jquery.ajaxchimp.min.js"></script>
+    <script src="loading/js/6124-js-jquery.countdown.js"></script>
+    <script src="loading/js/3887-js-validator.min.js"></script>
+    <script src="loading/js/3754-js-bootstrap-select.min.js"></script>
+
+    <script src="loading/js/4201-js-main.js"></script>
+    <script>
+      window.onload = function exampleFunction() {
+        setTimeout(() => {
+          $("#preloader").fadeOut(1000, function () {
+            $("#preloader").hide();
+          });
+        }, 1000);
+      };
+    </script>
+  </body>
+</html>
