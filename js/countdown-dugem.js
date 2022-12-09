@@ -10,7 +10,7 @@ function just(time){
         hour = minute * 60,
         day = hour * 24;
 
-      let birthday = "Dec 6, 2022 00:00:00",
+      let birthday = "Jan 9, 2023 00:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function () {
           let now = new Date().getTime(),

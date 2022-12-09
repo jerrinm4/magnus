@@ -1,574 +1,1313 @@
-<style>
-    
-    @charset "UTF-8";
-    
-    /***********************************
-                /* 1. BODY */
-    /***********************************/
-    
-    * {
-      margin: 0;
-      padding: 0;
-      -webkit-text-size-adjust: none;
-    }
-    
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
-    
-    body {
-      padding: 0;
-      margin: 0;
-      background: #181828;
-      font-size: 14px;
-      line-height: 1;
-    }
-    
-    label {
-      cursor: pointer;
-    }
-    
-    a {
-      margin: 0;
-      padding: 0;
-      vertical-align: baseline;
-      background: transparent;
-      text-decoration: none;
-      color: #000;
-    }
-    
-    input, select, button, textarea {
-      margin: 0;
-      font-size: 100%;
-    }
-    
-    html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input {
-      border: 0;
-      outline: 0;
-      font-size: 100%;
-      vertical-align: baseline;
-      background: transparent;
-    }
-    
-    
-    .top-header:before {
-        background-image: url(https://1.bp.blogspot.com/-gxsOcYWghHA/Xp_izTh4sFI/AAAAAAAAU8s/y637Fwg99qAuzW9na_NT_uApny8Vce95gCEwYBhgL/s1600/header-footer-gradient-bg.png);
-    }
-    .top-header:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-repeat: repeat-x;
-        background-size: contain;
-        position: absolute;
-        top: 0;
-        left: 0;
-      opacity:0.5;
-    }
-    
-    
-    .starsec{
-      content: " ";
-        position: absolute;
-        width: 3px;
-        height: 3px;
-        background: transparent;
-       box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
-      animation: animStar 150s linear infinite;
-    }
-    
-    .starthird
-    {
-      content: " ";
-        position: absolute;
-        width: 3px;
-        height: 3px;
-        background: transparent;
-       box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
-      animation: animStar 10s linear infinite;
-    }
-    
-    .starfourth
-    {
-      content: " ";
-        position: absolute;
-        width: 2px;
-        height: 2px;
-        background: transparent;
-       box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
-      animation: animStar 50s linear infinite;
-    }
-    
-    .starfifth
-    {
-      content: " ";
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        background: transparent;
-       box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
-      animation: animStar 80s linear infinite;
-    }
-    
-    @keyframes animStar
-    {
-      0% {
-        transform: translateY(0px);
-    }
-      100% {
-        transform: translateY(-2000px);
-    }
-    }
-    
-    
-    
-    button {
-      border: none;
-      padding: 0;
-      font-size: 0;
-      line-height: 0;
-      background: none;
-      cursor: pointer;
-    }
-    
-    :focus {
-      outline: 0;
-    }
-    
-    .clearfix:before, .clearfix:after {
-      content: "\0020";
-      display: block;
-      height: 0;
-      visibility: hidden;
-    }
-    
-    .clearfix:after {
-      clear: both;
-    }
-    
-    .clearfix {
-      zoom: 1;
-    }
-    
-                /* 1. END BODY */
-    /***********************************/
-    
-    /***********************************
-                /* 2. CONTENT */
-    /***********************************/
-    /* 2.1. Section error */
-    .error {
-      min-height: 100vh;
-      position: relative;
-      padding: 240px 0;
-      box-sizing: border-box;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      margin-top: 70px;
-    }
-    
-    .error__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    
-    .error__content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-    }
-    
-    .error__message {
-      text-align: center;
-      color: #181828;
-    }
-    
-    .message__title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-       font-size: 5.6rem;
-      padding-bottom: 40px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    
-    .message__text {
-      font-family: 'Montserrat', sans-serif;
-      line-height: 42px;
-      font-size: 18px;
-      padding: 0 60px;
-      max-width: 680px;
-      margin: auto;
-    }
-    
-    .error__nav {
-      max-width: 600px;
-      margin: 40px auto 0;
-      text-align: center;
-    }
-    
-    .e-nav__form {
-      position: relative;
-      height: 45px;
-      overflow: hidden;
-      width: 170px;
-      display: inline-block;
-      vertical-align: top;
-      border: 1px solid #212121;
-      padding-left: 10px;
-      padding-right: 46px;
-    }
-    
-    .e-nav__icon {
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      color: #212121;
-      -webkit-transition: color .25s ease;
-      transition: color .25s ease;
-    }
-    
-    .e-nav__link {
-      height: 45px;
-      line-height: 45px;
-      width: 170px;
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 15px;
-      border: 1px solid #181828;
-      color: #181828;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      font-size: 11px;
-      letter-spacing: .1rem;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .e-nav__link:before {
-      content: '';
-      height: 200px;
-      background: #212121;
-      position: absolute;
-      top: 70px;
-      right: 70px;
-      width: 260px;
-      -webkit-transition: all .3s;
-      transition: all .3s;
-      -webkit-transform: rotate(50deg);
-              transform: rotate(50deg);
-    }
-    
-    .e-nav__link:after {
-      -webkit-transition: all .3s;
-      transition: all .3s;
-      z-index: 999;
-      position: relative;
-    }
-    
-    .e-nav__link:after {
-      content: "Refresh";
-    }
-    
-    .e-nav__link:hover:before {
-      top: -60px;
-      right: -50px;
-    }
-    
-    .e-nav__link:hover {
-      color: #fff;
-    }
-    
-    .e-nav__link:nth-child(2):hover:after {
-      color: #fff;
-    }
-    /* 2.1. END Section Error */
-    
-    /* 2.2. Social style */
-    .error__social {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      left: 20px;
-      z-index: 10;
-    }
-    
-    .e-social__list {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-    
-    .e-social__icon {
-      padding-bottom: 30px;
-    }
-    
-    .e-social__icon:last-child {
-      padding-bottom: 0;
-    }
-    
-    .e-social__link {
-      color: #fff;
-      -webkit-transition: all .25s ease;
-      transition: all .25s ease;
-      display: block;
-    }
-    
-    .e-social__link:hover {
-      opacity: .7;
-    }
-    /* 2.2. END Social style */
-    
-    /* 2.3. Lamp */
-    .lamp {
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      top: 0px;
-      margin: 0px auto;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform-origin: center top;
-      animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
-      animation: move 5.1s infinite;
-    }
-    
-    @keyframes move {
-      0% {
-        transform: rotate(40deg);
-      }
-      50% {
-        transform: rotate(-40deg);
-      }
-      100% {
-        transform: rotate(40deg);
-      }
-    }
-    
-    .cable {
-      width: 8px;
-        height: 248px;
-        background-image: linear-gradient(rgb(32 148 218 / 70%), rgb(193 65 25)), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-    }
-    
-    .cover {
-      width: 200px;
-      height: 80px;
-      background: #0bd5e8;
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      position: relative;
-      z-index: 200;
-    }
-    
-    .in-cover {
-      width: 100%;
-      max-width: 200px;
-      height: 20px;
-      border-radius: 100%;
-      background: #08ffff;
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      margin: 0px auto;
-      bottom: -9px;
-      z-index: 100;
-    }
-    .in-cover .bulb {
-         width: 50px;
-        height: 50px;
-        background-color: #08fffa;
-        border-radius: 50%;
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        bottom: -20px;
-        margin: 0px auto;
-        -webkit-box-shadow: 0 0 15px 7px rgba(0,255,255,0.8), 0 0 40px 25px rgba(0,255,255,0.5), -75px 0 30px 15px rgba(0,255,255,0.2);
-        box-shadow: 0 0 25px 7px rgb(127 255 255 / 80%), 0 0 64px 47px rgba(0,255,255,0.5), 0px 0 30px 15px rgba(0,255,255,0.2);
-    }
-    
-    
-    .light {
-          width: 200px;
-        height: 0px;
-        border-bottom: 3400px solid rgb(44 255 255 / 24%);
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 270px;
-        margin: 0px auto;
-        z-index: 1;
-        border-radius: 90px 90px 0px 0px;
-    }
-    /* 2.3. END Lamp */
-    /***********************************
-                /* 2. END CONTENT */
-    /***********************************/
-    
-    /***********************************
-                /* 3. RESPONSIVE */
-    /***********************************/
-    .error {
-      overflow: hidden;
-      max-height: 100vh;
-    }
-    @media (max-width: 1400px) { 
-      .lamp {
-        zoom: .5;
-      }
-      .error__content {
-        top: 55%;
-      }
-      .message__title {
-        font-size: 3.5rem;
-      }
-    }
-    @media (max-width: 900px) {
-    
-      .message__title {
-        font-size: 34px;
-    
-      }
-      .error__content {
-        top: 55%;
-      }
-      }
-    @media (max-width: 950px) {
-      .lamp__wrap {
-        max-height: 100vh;
-        overflow: hidden;
-        max-width: 100vw;
-      }
-      .error__social {
-        bottom: 30px;
-        top: auto;
-        transform: none;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta
+      name="msapplication-config"
+      content="/img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="MAGNUS-2K23"
+      content="https://magnus2k22.tech/img/logo/meta.png"
+    />
+    <meta property="og:site_name" content="Magnus 2K23 @ YMBC" />
+    <meta property="og:title" content="Magnus 2K23 @ YMBC" />
+    <meta
+      property="og:description"
+      content="Department of Computer Application Presents Magnus 2k23
+      Intercollege Fest @ YMBC"
+    />
+    <meta
+      property="og:image"
+      content="https://magnus2k22.tech/img/logo/meta.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://magnus2k22.tech" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- SYLESHEETS
+            ============================================= -->
+    <style>
+      #preloader {
+        background: #000 url(img/logo/load.gif) no-repeat center center;
+        background-size: 25%;
+        height: 100vh;
+        background-blend-mode: difference;
         width: 100%;
         position: fixed;
-        left: 0;
+        z-index: 200;
       }
-      .e-social__icon {
-        display: inline-block;
-        padding-right: 30px;
-      }
-      .e-social__icon:last-child {
-        padding-right: 0;
-      }
-      .e-social__icon {
-        padding-bottom: 0;
-      }
-    }
-    @media (max-width: 750px) {
-      body, html, {
-        max-height: 100vh;
-      }
-       .error__content {
-        position: static;
-        margin: 0 auto;
-        transform: none;
-        padding-top: 300px;
-      }
-      .error {
-        padding-top: 0;
-        padding-bottom: 100px;
-        height: 100vh;
-      }
-      }
-    @media (max-width: 650px) {
-      .message__title {
-        font-size: 36px;
-        padding-bottom: 20px;
-      }
-      .message__text {
-        font-size: 16px;
-        line-height: 2;
-        padding-right: 20px;
-        padding-left: 20px;
-      }
-      .lamp {
-        zoom: .6;
-      }
-      .error__content {
-        padding-top: 180px;
-      }
-      }
-    @media (max-width: 480px) {
-    
-      .message__title {
-        font-size: 30px;
-      }
-      .message__text {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 15px;
-      }
-      .error__nav {
-        margin-top: 20px;
-      }
-    }
     </style>
-    <a href="#" target="_blank">
-        <header class="top-header">
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/swiper.min.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/lightgallery.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/plugin.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/sm-core-css.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/sm-clean.css" type="text/css" />
+    <link rel="stylesheet" href="css/thaw-flex.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/aos.css" type="text/css" />
+    <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      id="themify-icons-css"
+      href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css"
+      type="text/css"
+      media="all"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+    <style>
+      table img {
+        width: 200px;
+      }
+
+      .event-mobile li {
+        background-color: rgba(0, 0, 0, 0.219) !important;
+      }
+
+      .event-mobile img {
+        width: 340px;
+      }
+
+      .global-block img {
+        border-radius: 14px !important;
+      }
+
+      .countdown .float:after {
+        position: absolute;
+        content: ":";
+        right: -6px;
+        top: -10px;
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 43px;
+      }
+
+      .magstart {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+      }
+
+      .magstart img {
+        display: none;
+      }
+
+      @media (max-width: 769px) {
+        .magstart img {
+          display: block;
+          width: 200px;
+          margin: 0 auto;
+        }
+
+        .hide-button-1 {
+          display: none;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .hide-button-2 {
+          display: none;
+        }
+      }
+
+      .countdown .seconds-count {
+        margin-right: 0px;
+        padding-right: 0px;
+        content: "";
+      }
+      .btn-top {
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: rgba(12, 12, 12, 0.548);
+        border: none;
+      }
+      .lozad1 {
+        opacity: 0.5;
+      }
+      .fade-in-image {
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        -ms-animation: fadeIn 1s;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-ms-keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <script>
+      document.documentElement.className = "js";
+    </script>
+    <!-- EXTERNAL STYLES
+            ============================================= -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- DOCUMENT TITLES
+            ============================================= -->
+    <title>MAGNUS 2K23</title>
+    <script>
+      (function ($) {
+        $(document).ready(function () {
+          var $win = $(window);
+          var elementTop, elementBottom, viewportTop, viewportBottom;
+          function isScrolledIntoView(elem) {
+            elementTop = $(elem).offset().top;
+            elementBottom = elementTop + $(elem).outerHeight();
+            viewportTop = $win.scrollTop();
+            viewportBottom = viewportTop + $win.height();
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+          }
+          if ($("video").length) {
+            var loadVideo;
+            $("video").each(function () {
+              $(this).attr("webkit-playsinline", "");
+              $(this).attr("playsinline", "");
+              $(this).attr("muted", "muted");
+
+              $(this).attr("id", "loadvideo");
+              loadVideo = document.getElementById("loadvideo");
+              loadVideo.load();
+            });
+            $win.scroll(function () {
+              $("video").each(function () {
+                if (isScrolledIntoView(this) == true) {
+                  $(this)[0].play();
+                } else {
+                  $(this)[0].pause();
+                }
+              });
+            });
+          }
+        });
+      })(jQuery);
+    </script>
+  </head>
+
+  <body class="demo-1">
+    <!-- preloader -->
+    <div id="preloader"></div>
+    <a href="#"
+      ><button class="btn-top">
+        <i style="font-size: 24px" class="fas">&#xf106;</i>
+      </button></a
+    >
+    <!-- preloader -->
+    <!--MAIN WRAPPER START-->
+    <div class="main-wrapper clearfix">
+      <!-- HEADER STARTfoot
+                ============================================= -->
+      <header id="header" class="header-style-1">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="header-clear clearfix">
+              <div class="header-content-left clearfix">
+                <!-- LOGO START
+                                ============================================= -->
+                <div class="logo">
+                  <a href="eindex.html"
+                    ><img src="img/logo/c_logo.png" alt="Magnus Logo"
+                  /></a>
+                </div>
+                <!-- LOGO END -->
+              </div>
+              <div class="header-content-center clearfix">
+                <!-- NAVIGATION START============================================= -->
+                <nav class="main-nav">
+                  <!-- Mobile menu toggle button (hamburger/x icon) -->
+                  <input id="main-menu-state" type="checkbox" />
+                  <label
+                    class="main-menu-btn sub-menu-trigger"
+                    for="main-menu-state"
+                  >
+                    <span class="main-menu-btn-icon"></span> Toggle main menu
+                    visibility
+                  </label>
+                  <!-- Sample menu definition -->
+                  <ul id="main-menu" class="sm sm-clean">
+                    <li class="menu-item">
+                      <a href="eindex.html" class="menu-link active">Home</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="about.html" class="menu-link">About</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="event.html" class="menu-link">Events</a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- NAVIGATION END -->
+              </div>
+              <div class="header-content-right">
+                <div class="header-info head-item clearfix">
+                  <div class="info-wrap">
+                    <div class="search-wrap">
+                      <button id="btn-search" class="btn btn--search">
+                        <i class="icon-simple-line-icons-143"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search">
+                <button id="btn-search-close" class="btn--search-close">
+                  <i class="icon-themify-1"></i>
+                </button>
+                <form class="search__form">
+                  <input
+                    class="search__input"
+                    name="search"
+                    type="search"
+                    placeholder="Search..."
+                  />
+                  <span class="search__info"
+                    >Hit enter to search or ESC to close</span
+                  >
+                </form>
+              </div>
+              <!-- /search -->
+            </div>
+          </div>
+        </div>
       </header>
-      
-      <!--dust particel-->
-      <div>
-        <div class="starsec"></div>
-        <div class="starthird"></div>
-        <div class="starfourth"></div>
-        <div class="starfifth"></div>
-      </div>
-      <!--Dust particle end--->
-      
-      
-      <div class="lamp__wrap">
-        <div class="lamp">
-          <div class="cable"></div>
-          <div class="cover"></div>
-          <div class="in-cover">
-            <div class="bulb"></div>
+      <!-- HEADER END -->
+      <!-- SECTION -->
+      <section class="content">
+        <!-- MAIN VIDEO BACKGROUND -->
+        <div class="main-video">
+          <div class="image-background"></div>
+          <div class="image-title">
+            <br />
+            <a href="#eventss" class="button-basic-1" data-aos="fade-up"
+              >All Events</a
+            >
           </div>
-          <div class="light"></div>
-        </div>
-      </div>
-      <!-- END Lamp -->
-      <section class="error">
-        <!-- Content -->
-        <div class="error__content">
-          <div class="error__message message">
-            <h1 class="message__title">Under Maintenance</h1>
-            <p class="message__text">Under Maintenance. Please try again.</p>
-          </div>
-          <div class="error__nav e-nav">
-            <a href="#" target="_blanck" class="e-nav__link"></a>
+          <div class="video-background">
+            <video autoplay muted loop id="myVideo">
+              <source
+                media="(min-width: 769px)"
+                src="img/video/concert-loop.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
-        <!-- END Content -->
-      
+        <!-- MAIN VIDEO BACKGROUND END -->
+        <!-- GlOBAL BLOCK -->
+        <div class="global-block">
+          <div class="container">
+            <div class="global-block-wrap grid grid-cols-12">
+              <div
+                class="global-counter col-span-7 sm:col-span-12 res:col-span-12 magstart"
+              >
+                <div class="global-title">
+                  <!-- <a href="#" class="button-basic-1">Electro</a> -->
+                  <h2 data-aos="fade-up">
+                    MAGNUS 2<span style="color: rgb(255, 0, 0)">K</span>23
+                  </h2>
+                  <h5 data-aos="fade-up">/ 09 JANUARY 2023</h5>
+                  <img src="img/logo/logo-squre.png" alt="Logo" />
+                  <!-- <p class="Dugem-text" data-aos="fade-up">event info.</p> -->
+                </div>
+                <div class="global-countdown">
+                  <div class="event-counter clearfix">
+                    <div class="countdown">
+                      <div class="days-count float">
+                        <h3 id="days"></h3>
+                        <span>Days</span>
+                      </div>
+                      <div class="hours-count float">
+                        <h3 id="hours"></h3>
+                        <span>Hours</span>
+                      </div>
+                      <div class="minutes-count float">
+                        <h3 id="minutes"></h3>
+                        <span>Minutes</span>
+                      </div>
+                      <div class="seconds-count float">
+                        <h3 id="seconds"></h3>
+                        <span>Seconds</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="global-counter col-span-7 sm:col-span-12 res:col-span-12"
+              >
+                <div class="global-title">
+                  <!-- <a href="#" class="button-basic-1">Electro</a> -->
+                  <center>
+                    <img
+                      width="160px"
+                      src="img/New folder/matadorialogowhite.png"
+                      alt=""
+                    />
+                  </center>
+                  <h2 data-aos="fade-up">MATADORIA</h2>
+                  <h5 data-aos="fade-up">/ 10 JANUARY 2023</h5>
+                  <p class="Dugem-text" data-aos="fade-up">
+                    Musical Night of MAGNUS 2<span style="color: rgb(255, 0, 0)"
+                      >K</span
+                    >23
+                  </p>
+                </div>
+              </div>
+              <div class="global-img col-span-5 sm:col-span-12 res:col-span-12">
+                <div class="img-header">
+                  <a class="pattern" href="#myVideo">
+                    <div class="video-background">
+                      <video width="100%" loop autoplay id="myVideo">
+                        <source
+                          src="img/New folder/VN20221209.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div style="width: 100vw; padding-top: 50px; "></div>
+
+              <div class="col-span-7 sm:col-span-12 res:col-span-12 gap-5">
+                <div class="global-title">
+                  <!-- <a href="#" class="button-basic-1">Electro</a> -->
+                  <h2 data-aos="fade-up">Main Event</h2>
+                  <h5 data-aos="fade-up">/ 09 JANUARY 2023</h5>
+                </div>
+              </div>
+              <br />
+              <div class="global-img col-span-5 sm:col-span-12 res:col-span-12">
+                <div class="item-content">
+                  <div class="img-header">
+                    <a class="pattern" href="#">
+                      <img
+                        src="img/events/14 fashion show.png"
+                        alt="event-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="global-counter col-span-7 sm:col-span-12 res:col-span-12"
+              >
+                <div class="global-title">
+                  <!-- <a href="#" class="button-basic-1">Electro</a> -->
+                  <h2 data-aos="fade-up">Fashion Show</h2>
+                  <h5 data-aos="fade-up">/ 08 JANUARY 2023</h5>
+                  <p class="Dugem-text" data-aos="fade-up">event info.</p>
+                </div>
+                <div class="global-buy" data-aos="fade-up">
+                  <a href="#eventss" class="button-basic-1">View All</a>
+                  <!-- <a href="#" class="button-basic-2">Get Ticket</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GlOBAL BLOCK END -->
+        <!-- TABLE EVENTS -->
+        <div id="eventss" class="table-events">
+          <div class="background-overlay"></div>
+          <div class="container">
+            <div class="the-title text-center" data-aos="fade-up">
+              <h5 class="head-title-2">/ COMPETITION</h5>
+              <h2 class="head-title-1">
+                Main Competition <span class="title-end">.</span>
+              </h2>
+              <p class="Dugem-text">
+                Department of Computer Application Presents Magnus 2k22
+                Intercollege Fest.
+              </p>
+            </div>
+            <table class="event">
+              <tr>
+                <td class="event-thumb-head">Competition</td>
+                <td>Name</td>
+                <td>Ticket</td>
+              </tr>
+              <tr class="space">
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="event-thumb">
+                  <a>
+                    <img
+                      width="70"
+                      height="100"
+                      src="img/events_blur/12 valorant.png"
+                      class="lozad lozad1"
+                      data-src="img/events/12 valorant.png"
+                      alt="table-5"
+                    />
+                  </a>
+                </td>
+                <td class="event-artist">Valorant</td>
+                <td class="event-ticket-link">
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/gPDhvnyDoukDbhiRA"
+                    class="button button-white rsvp"
+                    >Register</a
+                  >
+                </td>
+              </tr>
+              <tr class="space">
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="event-thumb">
+                  <a>
+                    <img
+                      width="70"
+                      height="100"
+                      src="img/events_blur/5 cricket.png"
+                      class="lozad lozad1"
+                      data-src="img/events/5 cricket.png"
+                      alt="table-5"
+                    />
+                  </a>
+                </td>
+                <td class="event-artist">Cricket</td>
+                <td class="event-ticket-link">
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/xwBqUsbwCZPfUMHv8"
+                    class="button button-white rsvp"
+                    >Register</a
+                  >
+                </td>
+              </tr>
+              <tr class="space">
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="event-thumb">
+                  <a>
+                    <img
+                      width="70"
+                      height="100"
+                      src="img/events_blur/3 ideathon.png"
+                      class="lozad lozad1"
+                      data-src="img/events/3 ideathon.png"
+                      alt="table-3"
+                    />
+                  </a>
+                </td>
+                <td class="event-artist">Ideathon</td>
+                <td class="event-ticket-link">
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/866vGo5KBMqt8bYf6"
+                    class="button button-white rsvp"
+                    >Register</a
+                  >
+                </td>
+              </tr>
+              <tr class="space">
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="event-thumb">
+                  <a>
+                    <img
+                      width="70"
+                      height="100"
+                      src="img/events_blur/4 football.png"
+                      class="lozad lozad1"
+                      data-src="img/events/4 football.png"
+                      alt="table-4"
+                    />
+                  </a>
+                </td>
+                <td class="event-artist">Football</td>
+                <td class="event-ticket-link">
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/pCe4UzUCJHFM4E6b6"
+                    class="button button-white rsvp"
+                    >Register</a
+                  >
+                </td>
+              </tr>
+            </table>
+
+            <div class="event-mobile">
+              <ul class="event-list">
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/12 valorant.png"
+                        src="img/events_blur/12 valorant.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Valorant</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/kv6Ka37zfj18BtDG6"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/5 cricket.png"
+                        src="img/events_blur/5 cricket.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Cricket</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/CH38KN7mgqBLP93J8"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/3 ideathon.png"
+                        src="img/events_blur/3 ideathon.png"
+                        alt="table-1-3"
+                      />
+                    </a>
+                  </span>
+                  <p><span>Event :</span> <a href="#">Ideathon</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/866vGo5KBMqt8bYf6"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a
+                      ><img
+                        class="lozad lozad1"
+                        data-src="img/events/4 football.png"
+                        src="img/events_blur/4 football.png"
+                        alt="table-1-4"
+                      />
+                    </a>
+                  </span>
+                  <p><span>Event :</span> <a href="#">Football</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/pCe4UzUCJHFM4E6b6"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/7 E WASTE.png"
+                        src="img/events_blur/7 E WASTE.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">E WASTE</a></p>
+                  <p>
+                    <a href="#" class="button-basic-1">REGISTER</a>
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        src="img\events_blur\1 tresure hund.png"
+                        data-src="img\events\1 tresure hund.png"
+                        alt="table-1-1"
+                      />
+                    </a>
+                  </span>
+                  <p><span>Event :</span> <a href="#">TREASURE HUNT </a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/Bo8NQrM2Zb4M3DEL8"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/2 Hackathon.png"
+                        src="img/events_blur/2 Hackathon.png"
+                        alt="table-1-2"
+                      />
+                    </a>
+                  </span>
+                  <p><span>Event :</span> <a href="#">Hackathon</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/qXiLT6u76KUkFVa66"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/20 speed cubing.png"
+                        src="img/events_blur/20 speed cubing.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Speed cubing</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd1GmJhaq9hQ_ZAMe3zQPUkC2fBsow6MbA4FJkbWGbk75bmvg/viewform"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/21 movie quiz.png"
+                        src="img/events_blur/21 movie quiz.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Movie Quiz</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSf0U8FbhHwkfYxiKkt8PgED0IKyvlVVS8yfe1zTtrX3N7_EqA/viewform"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/8 error finding.png"
+                        src="img/events_blur/8 error finding.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Error Finding</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd2sauSoJ2dp-qy0n-ezex0hQn9nnLlWQPDSYsgll74EJ6heg/viewform"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/9 spot photography.png"
+                        src="img/events_blur/9 spot photography.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Spot Photography</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/X9oNUgQ3hN48hi2h8"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/10 60 sec video.png"
+                        src="img/events_blur/10 60 sec video.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">60 Sec Video</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/tnEnzdn7VvtHtNHm9"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/11 fifa.png"
+                        src="img/events_blur/11 fifa.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">FiFa</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/7o8wDFR8fgGygiRS8"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/13 Mini militia.png"
+                        src="img/events_blur/13 Mini militia.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Mini Militia</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/Js3RzpVDi6pyWhAb9"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span class="img-thumb">
+                    <a>
+                      <img
+                        class="lozad lozad1"
+                        data-src="img/events/6 group dance.png"
+                        src="img/events_blur/6 group dance.png"
+                        alt="table-1-5"
+                      />
+                    </a>
+                  </span>
+                  <!-- <p><span>Date :</span> <a href="#">26/06/2021</a></p> -->
+                  <p><span>Event :</span> <a href="#">Group Dance</a></p>
+                  <p>
+                    <a
+                      target="_blank"
+                      href="https://forms.gle/qRPgELa63cMfQCKK6"
+                      class="button-basic-1"
+                      >REGISTER</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="button-view text-center hide-button-1">
+              <a href="event.html" class="button-basic-1" data-aos="fade-up"
+                >VIEW ALL EVENTS</a
+              >
+            </div>
+            <div class="button-view text-center hide-button-2">
+              <a href="about.html" class="button-basic-3" data-aos="fade-up"
+                >ABOUT US</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- TABLE EVENTS END -->
+        <!-- BLOG LOOP -->
+        <div class="blog-loop">
+          <div class="container">
+            <div class="news-title grid grid-cols-12">
+              <div
+                class="the-title col-span-6 sm:col-span-12 res:col-span-12"
+                data-aos="fade-up"
+              >
+                <h5 class="head-title-2">/ EVENTS</h5>
+                <h2 class="head-title-1">
+                  Upcoming Event <span class="title-end">.</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="blog-slide">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-post">
+                    <div class="post-thumb">
+                      <a>
+                        <img
+                          class="lozad2"
+                          data-src="img/events/14 fashion show.png"
+                          src="img/events_blur/14 fashion show.png"
+                          alt="latest-news-img-2"
+                        />
+                        <div class="Dugem-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="post-content-wrap">
+                      <div class="post-category">
+                        <a class="button-basic-1">Fashion Show</a>
+                      </div>
+
+                      <div class="post-date">
+                        <a><span>Jan 09, 2023</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-post">
+                    <div class="post-thumb">
+                      <a>
+                        <img
+                          class="lozad2"
+                          data-src="img/events/17 meta vers.png"
+                          src="img/events_blur/17 meta vers.png"
+                          alt="latest-news-img-4"
+                        />
+                        <div class="Dugem-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="post-content-wrap">
+                      <div class="post-category">
+                        <a href="#" class="button-basic-1">Meta Vers</a>
+                      </div>
+                      <div class="post-date">
+                        <a href="#"><span>Jan 07, 2023</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-post">
+                    <div class="post-thumb">
+                      <a>
+                        <img
+                          class="lozad2"
+                          data-src="img/events/18 ai expo.png"
+                          src="img/events_blur/18 ai expo.png"
+                          alt="latest-news-img-3"
+                        />
+                        <div class="Dugem-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="post-content-wrap">
+                      <div class="post-category">
+                        <a href="#" class="button-basic-1">Ai Expo</a>
+                      </div>
+                      <div class="post-date">
+                        <a href="#"><span>Jan 07, 2023</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-post">
+                    <div class="post-thumb">
+                      <a>
+                        <img
+                          class="lozad2"
+                          data-src="img/events/15 horror room.png"
+                          src="img/events_blur/15 horror room.png"
+                          alt="latest-news-img-2"
+                        />
+                        <div class="Dugem-overlay"></div>
+                      </a>
+                    </div>
+                    <div class="post-content-wrap">
+                      <div class="post-category">
+                        <a class="button-basic-1">Horror Room</a>
+                      </div>
+
+                      <div class="post-date">
+                        <a><span>Jan 07, 2023</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <!-- BLOG LOOP END -->
+
+        <!-- swiper-container,"swiper-wrapper" -->
+
+        <!-- TESTIMONIAL BLOCK -->
+        <div class="testimonial-block">
+          <div class="background-overlay"></div>
+          <div class="testimonial-background"></div>
+          <div class="testimonial-wrap">
+            <div class="the-title text-center">
+              <h5 class="head-title-2">/ ASSOCIATE WITH \</h5>
+              <br />
+              <h2 class="head-title-1">
+                (<span class="title-end">●</span>'◡'<span class="title-end"
+                  >●</span
+                >)
+              </h2>
+            </div>
+            <div class="testimonial-slide">
+              <div class="swipper-button clearfix">
+                <div class="swiper-button-next">
+                  <span>Prev</span>
+                  <div class="car-page-arrow-next"></div>
+                </div>
+                <div class="swiper-button-prev">
+                  <span>Next</span>
+                  <div class="car-page-arrow-prev"></div>
+                </div>
+              </div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testi-content">
+                      <div class="testimonial-text">
+                        <p>
+                          "Build students competitive ecosystem in india,
+                          develop rank board system & learning station."
+                        </p>
+                      </div>
+                      <div class="testimonial-detail-inner">
+                        <div class="testimonial-image">
+                          <img src="img/asoc/cozmek.png" alt="testi-1" />
+                        </div>
+                        <div class="test-info">
+                          <h5 class="testi-author">COZMEK</h5>
+                          <cite class="testi-job"> StratUp </cite>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testi-content">
+                      <div class="testimonial-text">
+                        <p>
+                          “IEDC is an organisation that promotes young
+                          innovators to achieve their goals and help them to
+                          bring up their startups.”
+                        </p>
+                      </div>
+                      <div class="testimonial-detail-inner">
+                        <div class="testimonial-image">
+                          <img src="img/asoc/iedc.png" alt="testi-2" />
+                        </div>
+                        <div class="test-info">
+                          <h5 class="testi-author">IEDC</h5>
+                          <cite class="testi-job"> * </cite>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-slide">
+                                    <div class="testi-content">
+                                        <div class="testimonial-text">
+                                            <p>
+                                                “The innovation and entrepreneurship development cell of Yeldo Mar
+                                                Baselios college, Puthuppady, is an organisation that promotes young
+                                                innovators to achieve their goals and help them to bring
+                                                up their startups.”
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-detail-inner">
+                                            <div class="testimonial-image">
+                                                <img src="img/asoc/r&d.png" alt="testi-2" />
+                                            </div>
+                                            <div class="test-info">
+                                                <h5 class="testi-author">Reserch & Devlopment</h5>
+                                                <cite class="testi-job"> * </cite>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TESTIMONIAL BLOCK END -->
+
+        <!-- BOOK TABLE -->
+        <!-- <div class="book-table">
+                    <div class="container">
+                        <div class="book-wrap news-title grid grid-cols-12 gap-24">
+                            <div class="the-title col-span-6 sm:col-span-12 res:col-span-12">
+                                <h5 class="head-title-2"> / RESERVATION </h5>
+                                <h2 class="head-title-1"> Book A Table Now
+                                    <span class="title-end">.</span></h2>
+                                <p class="Dugem-text"> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor. Sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+                            </div>
+                            <div class="contact-form-style col-span-6 sm:col-span-12 res:col-span-12">
+                                <input type="text" name="your-name" size="40" placeholder="Name">
+                                <input type="text" name="your-name" size="40" placeholder="Email">
+                                <textarea name="your-message" cols="40" rows="10" placeholder="Text"></textarea>
+                                <input type="submit" value="Send" class="button-basic-1">
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        <!-- BOOK TABLE END -->
       </section>
-      
-        </a>
+      <!-- SECTION END -->
+      <!-- FOOTER START
+                ============================================= -->
+      <footer id="footer" class="footer clearfix">
+        <div class="footer-wrap clearfix">
+          <div class="footer-bottom clearfix">
+            <div class="container">
+              <div class="row">
+                <div class="foot-col column column-1 text-center clearfix">
+                  <div class="logo-footer" style="margin-left: 3%">
+                    <a href="eindex.html"
+                      ><img src="img/logo/logo.png" alt="Logo-Footer"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="foot-col column column-1 text-center clearfix">
+                  <div class="social-footer">
+                    <ul>
+                      <li class="soc-icon">
+                        <a href="https://www.instagram.com/magnus_2k23/"
+                          ><i class="ti-instagram"></i> Instagram</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="foot-col column column-1 text-center clearfix">
+                  <div id="copyright" class="copyright-text">
+                    © Copyright 2022<br />
+                    made with
+
+                    <i class="fa fa-heart" aria-hidden="true"></i> Magnus Team
+                    <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </a></p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+    <!-- MAIN WRAPPER END -->
+    <!-- FOOTER SCRIPTS
+            ============================================= -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/countdown-dugem.js"></script>
+    <script src="js/dugem-lightbox.js"></script>
+    <script src="js/dugem-carousel.js"></script>
+    <script src="js/demo1.js"></script>
+    <script src="js/jquery.smartmenus.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        customEasing: function (time) {
+          return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+        },
+        updateURL: false,
+      });
+      window.onload = function exampleFunction() {
+        setTimeout(() => {
+          $("#preloader").fadeOut(1000, function () {
+            $("#preloader").hide();
+          });
+        }, 500);
+      };
+
+      const button = document.querySelector(".btn-top");
+      const displayButton = () => {
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 100) {
+            button.style.display = "block";
+          } else {
+            button.style.display = "none";
+          }
+        });
+      };
+      displayButton();
+
+      lozad(".lozad", {
+        load: function (el) {
+          el.src = el.dataset.src;
+          el.onload = function () {
+            el.classList.add("fade-in-image");
+            el.classList.remove("lozad1");
+          };
+        },
+      }).observe();
+
+      lozad(".lozad2", {
+        load: function (el) {
+          el.src = el.dataset.src;
+          el.onload = function () {
+            el.onload = function () {
+              el.removeAttribute("data-src");
+            };
+          };
+        },
+      }).observe();
+    </script>
+  </body>
+</html>
