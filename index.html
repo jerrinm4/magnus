@@ -56,13 +56,18 @@
             ============================================= -->
     <style>
       #preloader {
-        background: #000 url(img/logo/load.gif) no-repeat center center;
+        background: #000 url(img/logo/lload.gif) no-repeat center center;
         background-size: 25%;
         height: 100vh;
         background-blend-mode: difference;
         width: 100%;
         position: fixed;
         z-index: 200;
+      }
+      @media (min-width: 769px) {
+        #preloader {
+          background: url(img/logo/lload.gif);
+        }
       }
     </style>
 
@@ -238,42 +243,6 @@
     <!-- DOCUMENT TITLES
             ============================================= -->
     <title>MAGNUS 2K23</title>
-    <script>
-      (function ($) {
-        $(document).ready(function () {
-          var $win = $(window);
-          var elementTop, elementBottom, viewportTop, viewportBottom;
-          function isScrolledIntoView(elem) {
-            elementTop = $(elem).offset().top;
-            elementBottom = elementTop + $(elem).outerHeight();
-            viewportTop = $win.scrollTop();
-            viewportBottom = viewportTop + $win.height();
-            return elementBottom > viewportTop && elementTop < viewportBottom;
-          }
-          if ($("video").length) {
-            var loadVideo;
-            $("video").each(function () {
-              $(this).attr("webkit-playsinline", "");
-              $(this).attr("playsinline", "");
-              $(this).attr("muted", "muted");
-
-              $(this).attr("id", "loadvideo");
-              loadVideo = document.getElementById("loadvideo");
-              loadVideo.load();
-            });
-            $win.scroll(function () {
-              $("video").each(function () {
-                if (isScrolledIntoView(this) == true) {
-                  $(this)[0].play();
-                } else {
-                  $(this)[0].pause();
-                }
-              });
-            });
-          }
-        });
-      })(jQuery);
-    </script>
   </head>
 
   <body class="demo-1">
@@ -427,6 +396,7 @@
               <br />
               <div
                 class="global-counter col-span-7 sm:col-span-12 res:col-span-12"
+                style="padding-left: 0px"
               >
                 <div class="global-title">
                   <!-- <a href="#" class="button-basic-1">Electro</a> -->
@@ -456,7 +426,6 @@
                       width="100%"
                       loop
                       autoplay
-                      playsinline
                       id="myVideo"
                     >
                       <source src="img/New folder/m.webm" type="video/webm" />
@@ -570,7 +539,7 @@
                 <td class="event-ticket-link">
                   <a
                     target="_blank"
-                    href="https://forms.gle/xwBqUsbwCZPfUMHv8"
+                    href="https://forms.gle/CH38KN7mgqBLP93J8"
                     class="button button-white rsvp"
                     >Register</a
                   >
@@ -993,9 +962,7 @@
                     <div class="post-thumb">
                       <a>
                         <img
-                          class="lozad2"
-                          data-src="img/events/14 fashion show.png"
-                          src="img/events_blur/14 fashion show.png"
+                          src="img/events/14 fashion show.png"
                           alt="latest-news-img-2"
                         />
                         <div class="Dugem-overlay"></div>
@@ -1159,54 +1126,12 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="swiper-slide">
-                                    <div class="testi-content">
-                                        <div class="testimonial-text">
-                                            <p>
-                                                “The innovation and entrepreneurship development cell of Yeldo Mar
-                                                Baselios college, Puthuppady, is an organisation that promotes young
-                                                innovators to achieve their goals and help them to bring
-                                                up their startups.”
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-detail-inner">
-                                            <div class="testimonial-image">
-                                                <img src="img/asoc/r&d.png" alt="testi-2" />
-                                            </div>
-                                            <div class="test-info">
-                                                <h5 class="testi-author">Reserch & Devlopment</h5>
-                                                <cite class="testi-job"> * </cite>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- TESTIMONIAL BLOCK END -->
-
-        <!-- BOOK TABLE -->
-        <!-- <div class="book-table">
-                    <div class="container">
-                        <div class="book-wrap news-title grid grid-cols-12 gap-24">
-                            <div class="the-title col-span-6 sm:col-span-12 res:col-span-12">
-                                <h5 class="head-title-2"> / RESERVATION </h5>
-                                <h2 class="head-title-1"> Book A Table Now
-                                    <span class="title-end">.</span></h2>
-                                <p class="Dugem-text"> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor. Sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-                            </div>
-                            <div class="contact-form-style col-span-6 sm:col-span-12 res:col-span-12">
-                                <input type="text" name="your-name" size="40" placeholder="Name">
-                                <input type="text" name="your-name" size="40" placeholder="Email">
-                                <textarea name="your-message" cols="40" rows="10" placeholder="Text"></textarea>
-                                <input type="submit" value="Send" class="button-basic-1">
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
         <!-- BOOK TABLE END -->
       </section>
       <!-- SECTION END -->
@@ -1312,6 +1237,41 @@
           };
         },
       }).observe();
+
+      (function ($) {
+        $(document).ready(function () {
+          var $win = $(window);
+          var elementTop, elementBottom, viewportTop, viewportBottom;
+          function isScrolledIntoView(elem) {
+            elementTop = $(elem).offset().top;
+            elementBottom = elementTop + $(elem).outerHeight();
+            viewportTop = $win.scrollTop();
+            viewportBottom = viewportTop + $win.height();
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+          }
+          if ($("video").length) {
+            var loadVideo;
+            $("video").each(function () {
+              $(this).attr("webkit-playsinline", "");
+              $(this).attr("playsinline", "");
+              $(this).attr("muted", "muted");
+
+              $(this).attr("id", "loadvideo");
+              loadVideo = document.getElementById("loadvideo");
+              loadVideo.load();
+            });
+            $win.scroll(function () {
+              $("video").each(function () {
+                if (isScrolledIntoView(this) == true) {
+                  $(this)[0].play();
+                } else {
+                  $(this)[0].pause();
+                }
+              });
+            });
+          }
+        });
+      })(jQuery);
     </script>
   </body>
 </html>

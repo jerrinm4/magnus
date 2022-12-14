@@ -43,13 +43,18 @@
 
   <style>
     #preloader {
-      background: #000 url(img/logo/load.gif) no-repeat center center;
+      background: #000 url(img/logo/lload.gif) no-repeat center center;
       background-size: 25%;
       height: 100vh;
       background-blend-mode: difference;
       width: 100%;
       position: fixed;
       z-index: 200;
+    }
+    @media (min-width: 769px) {
+      #preloader {
+        background: url(img/logo/lload.gif);
+      }
     }
   </style>
   <script>
@@ -143,7 +148,7 @@
         <div class="container">
           <div class="about-wrap">
             <div class="about-img">
-              <img src="img/logo/about.png" alt="about-img" />
+              <img src="img/logo/about.jpg" alt="about-img" />
             </div>
             <div class="about-text">
               <div class="the-title">
@@ -456,7 +461,7 @@
                 <div class="social-footer">
                   <ul>
                     <li class="soc-icon">
-                      <a href="https://www.instagram.com/magnus_2k22_/"><i class="ti-instagram"></i> Instagram</a>
+                      <a href="https://www.instagram.com/magnus_2k23"><i class="ti-instagram"></i> Instagram</a>
                     </li>
                   </ul>
                 </div>
