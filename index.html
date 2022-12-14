@@ -426,7 +426,9 @@
                       width="100%"
                       loop
                       autoplay
-                      id="myVideo"
+                      muted
+                      id="myVideo1"
+                      onmouseover="toggleMute()"
                     >
                       <source src="img/New folder/m.webm" type="video/webm" />
                       <source src="img/New folder/n.mp4" type="video/mp4" />
@@ -1237,7 +1239,11 @@
           };
         },
       }).observe();
-
+      $("#myVideo1").prop("volume", 0.3);
+      var video = document.getElementById("myVideo1");
+      function toggleMute() {
+        video.muted = false;
+      }
       (function ($) {
         $(document).ready(function () {
           var $win = $(window);
@@ -1249,19 +1255,9 @@
             viewportBottom = viewportTop + $win.height();
             return elementBottom > viewportTop && elementTop < viewportBottom;
           }
-          if ($("video").length) {
-            var loadVideo;
-            $("video").each(function () {
-              $(this).attr("webkit-playsinline", "");
-              $(this).attr("playsinline", "");
-              $(this).attr("muted", "muted");
-
-              $(this).attr("id", "loadvideo");
-              loadVideo = document.getElementById("loadvideo");
-              loadVideo.load();
-            });
+          if ($("#myVideo1").length) {
             $win.scroll(function () {
-              $("video").each(function () {
+              $("#myVideo1").each(function () {
                 if (isScrolledIntoView(this) == true) {
                   $(this)[0].play();
                 } else {
