@@ -73,7 +73,6 @@
       type="text/css"
       media="all"
     />
-
     <style>
       #preloader {
         background: #000 url(img/logo/lload.gif) no-repeat center center;
@@ -144,18 +143,35 @@
                   <!-- Sample menu definition -->
                   <ul id="main-menu" class="sm sm-clean">
                     <li class="menu-item">
-                      <a href="eindex.html" class="menu-link">Home</a>
+                      <a href="/" class="menu-link">Home</a>
                     </li>
                     <li class="menu-item">
                       <a href="about.html" class="menu-link active">About</a>
                     </li>
-                    <li class="menu-item">
-                      <a href="event.html" class="menu-link">Event</a>
+                    <li class="menu-item hide-button-1">
+                      <a href="event.html" class="menu-link">Events</a>
+                    </li>
+                    <li class="menu-item hide-button-2">
+                      <a href="/#eventss" class="menu-link">Events</a>
                     </li>
                   </ul>
                 </nav>
                 <!-- NAVIGATION END -->
               </div>
+              <style>
+                
+      @media (max-width: 769px) {
+        .hide-button-1 {
+          display: none !important;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .hide-button-2 {
+          display: none !important;
+        }
+      }
+              </style>
               <div class="header-content-right">
                 <div class="header-info head-item clearfix">
                   <div class="info-wrap">
@@ -216,117 +232,6 @@
             </div>
           </div>
         </div>
-        <!-- PAGE TITLE END -->
-        <!-- GALLERY BLOCK -->
-        <!-- <div id="lightgallery" class="about-gallery clearfix">
-          <div class="gallery clearfix">
-            <div class="gallery-block-wrap grid grid-cols-12 gap-10">
-              <div
-                data-src="img/about-gallery-1.png"
-                class="column-gallery col-span-4 sm:col-span-6 res:col-span-6"
-              >
-                <div class="item-wrap">
-                  <figure class="imghvr-circle-top-left">
-                    <img src="img/about-gallery-1.png" alt="gallery-pesta-1" />
-                    <figcaption>
-                      <div class="caption-inside">
-                        <div class="gallery-icon">
-                          <i class="fas fa-search"> </i>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div
-                data-src="img/about-gallery-2.png"
-                class="column-gallery col-span-4 sm:col-span-6 res:col-span-6"
-              >
-                <div class="item-wrap">
-                  <figure class="imghvr-circle-top-left">
-                    <img src="img/about-gallery-2.png" alt="gallery-pesta-2" />
-                    <figcaption>
-                      <div class="caption-inside">
-                        <div class="gallery-icon">
-                          <i class="fas fa-search"> </i>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div
-                data-src="img/about-gallery-3.png"
-                class="column-gallery col-span-4 sm:col-span-6 res:col-span-6"
-              >
-                <div class="item-wrap">
-                  <figure class="imghvr-circle-top-left">
-                    <img src="img/about-gallery-3.png" alt="gallery-pesta-3" />
-                    <figcaption>
-                      <div class="caption-inside">
-                        <div class="gallery-icon">
-                          <i class="fas fa-search"> </i>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div
-                data-src="img/about-gallery-4.png"
-                class="column-gallery col-span-4 sm:col-span-6 res:col-span-6"
-              >
-                <div class="item-wrap">
-                  <figure class="imghvr-circle-top-left">
-                    <img src="img/about-gallery-4.png" alt="gallery-pesta-4" />
-                    <figcaption>
-                      <div class="caption-inside">
-                        <div class="gallery-icon">
-                          <i class="fas fa-search"> </i>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div
-                data-src="img/about-gallery-5.png"
-                class="column-gallery col-span-4 sm:col-span-6 res:col-span-6"
-              >
-                <div class="item-wrap">
-                  <figure class="imghvr-circle-top-left">
-                    <img src="img/about-gallery-5.png" alt="gallery-pesta-5" />
-                    <figcaption>
-                      <div class="caption-inside">
-                        <div class="gallery-icon">
-                          <i class="fas fa-search"> </i>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div
-                data-src="img/about-gallery-6.png"
-                class="column-gallery col-span-4 sm:col-span-6 res:col-span-6"
-              >
-                <div class="item-wrap">
-                  <figure class="imghvr-circle-top-left">
-                    <img src="img/about-gallery-6.png" alt="gallery-pesta-6" />
-                    <figcaption>
-                      <div class="caption-inside">
-                        <div class="gallery-icon">
-                          <i class="fas fa-search"> </i>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- TESTIMONIAL BLOCK END -->
         <div class="testimonial-block">
           <div class="background-overlay"></div>
           <div class="testimonial-background"></div>
@@ -418,64 +323,7 @@
             </div>
           </div>
         </div>
-        <!-- TESTIMONIAL BLOCK END -->
-
-        <!-- CLIENT BLOCK -->
-        <!-- <div class="client-about">
-          <div class="container">
-            <div class="client-wrap grid grid-cols-12 gap-10">
-              <div
-                class="the-title text-left col-span-4 sm:col-span-2 res:col-span-12"
-              >
-                <h5 class="head-title-2" data-aos="fade-up">/PARTNERS</h5>
-                <h2 class="head-title-1">
-                  Social Channels & Sponsors <span class="title-end">.</span>
-                </h2>
-              </div>
-              <div
-                class="client-inner-content col-span-8 sm:col-span-12 res:col-span-12 grid grid-cols-6"
-              >
-                <div
-                  class="client-content col-span-2 sm:col-span-6 res:col-span-6"
-                >
-                  <a href="">
-                    <img src="img/client.-1.png" alt="client-1" />
-                  </a>
-                </div>
-                <div
-                  class="client-content col-span-2 sm:col-span-6 res:col-span-6"
-                >
-                  <a href="">
-                    <img src="img/client.-2.png" alt="client-2" />
-                  </a>
-                </div>
-                <div
-                  class="client-content col-span-2 sm:col-span-6 res:col-span-6"
-                >
-                  <a href="">
-                    <img src="img/client.-3.png" alt="client-3" />
-                  </a>
-                </div>
-                <div
-                  class="client-content col-span-2 sm:col-span-6 res:col-span-6"
-                >
-                  <a href="">
-                    <img src="img/client.-4.png" alt="client-4" />
-                  </a>
-                </div>
-                <div
-                  class="client-content col-span-2 sm:col-span-6 res:col-span-6"
-                >
-                  <a href="">
-                    <img src="img/client.-5.png" alt="client-5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- CLIENT BLOCK END -->
-
+      
         <!-- WAITING BLOCK -->
         <div class="waiting-block">
           <div class="background-overlay"></div>
